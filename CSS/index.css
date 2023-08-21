@@ -1,0 +1,359 @@
+:root {
+    --bg-primary: rgba(1, 141, 201, 1);
+    --bg-primary-light: rgba(1, 141, 201, 0.05);
+    --bg-danger-light: #FF3E3E21;
+    --text-primary: #018DC9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.w-30 {
+    width: 250px !important;
+}
+
+.noWrap {
+    white-space: nowrap !important;
+}
+
+.dateBg {
+    background: rgba(1, 141, 201, 0.14) !important;
+}
+
+.searchBg {
+    background: white;
+}
+
+.inputDateBg[type="text"] {
+    background: unset !important;
+    color: rgba(1, 141, 201, 1) !important;
+    font-weight: 500;
+}
+
+.inputSearch[type="text"] {
+    background: unset !important;
+    font-weight: 500;
+}
+
+.inputDateJs[type="text"] {
+    background: unset !important;
+    color: rgba(1, 141, 201, 1) !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.bg-light {
+    background: white !important;
+}
+
+.text-dark-light {
+    color: #263238 !important;
+}
+
+.text-content-dark {
+    color: rgba(55, 71, 79, 0.90) !important;
+}
+
+.bg-primary {
+    background: var(--bg-primary) !important;
+}
+
+.bg-primary-light {
+    background: var(--bg-primary-light) !important;
+}
+
+.bg-danger-light {
+    background: var(--bg-danger-light) !important;
+}
+
+.text-primary {
+    color: var(--text-primary) !important;
+}
+
+.btn-primary {
+    background: var(--bg-primary) !important;
+}
+
+.text-grey {
+    color: rgba(30, 30, 30, 0.55) !important;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.bg-grey {
+    background: rgba(209, 209, 209, 0.4);
+}
+
+.text-main {
+    color: rgba(1, 141, 201, 1);
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-1vw {
+    font-size: 1vw;
+}
+
+.fs-1-2vw {
+    font-size: 1.2vw;
+}
+
+.fs-1-5vw {
+    font-size: 1.5vw;
+}
+
+.fs-2-2vw {
+    font-size: 2.2vw;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-35 {
+    font-size: 35px;
+}
+
+.fs-2vw {
+    font-size: 1.8vw;
+}
+
+.fs-2-7vw {
+    font-size: 2.7vw;
+    line-height: 53px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-45 {
+    font-size: 45px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-3vw {
+    font-size: 3vw;
+}
+
+.fs-4vw {
+    font-size: 4vw;
+}
+
+.fWeight-200 {
+    font-weight: 200;
+}
+
+.fWeight-300 {
+    font-weight: 300;
+}
+
+.fWeight-400 {
+    font-weight: 400;
+}
+
+.fWeight-500 {
+    font-weight: 500;
+}
+
+.fWeight-600 {
+    font-weight: 600;
+}
+
+.fWeight-700 {
+    font-weight: 700;
+}
+
+.fWeight-800 {
+    font-weight: 800;
+}
+
+.line-50 {
+    line-height: 50px;
+}
+
+.line-70 {
+    line-height: 70px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-middle {
+    text-align: start;
+}
+
+.bg-grey {
+    background: #F5F5F5;
+}
+
+.taskBox {
+    border-radius: 20px;
+}
+
+.roundBtn {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.curve {
+    border-radius: 20px;
+}
+
+.borderBlue {
+    border: 1px solid rgba(1, 141, 201, 1);
+
+}
+
+.footerBtn {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+#footerInput {
+    border: none;
+    background: unset !important;
+}
+
+input#footerInput :focus {
+    outline: none !important;
+    background: unset !important;
+    color: white;
+    box-shadow: unset !important;
+}
+
+.greyInput::placeholder {
+    color: rgba(55, 71, 79, 0.9) !important;
+
+}
+
+#footerInput::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white !important;
+}
+
+.submit:hover {
+    background: white;
+    color: #018DC9;
+}
+
+.bgImg {
+    background-image: url(../images/bgImg.svg);
+}
+
+.upsideDownIcon.collapsed {
+    transform: rotate(180deg);
+}
+
+.upsideDownIcon {
+    transform: rotate(0deg);
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.featuresText{
+    text-align: justify;
+}
+@media only screen and (max-width: 767px) {
+    .text-middle {
+        text-align: center;
+    }
+    .featuresText{
+        text-align: center;
+    }
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .fs-20,
+    .fs-25 {
+        font-size: 18px;
+    }
+
+    .fs-30 {
+        font-size: 25px;
+    }
+
+    .fs-40 {
+        font-size: 20px;
+    }
+
+    .fs-35 {
+        font-size: 25px;
+    }
+
+    .fs-60 {
+        font-size: 35px;
+    }
+
+    .line-70 {
+        line-height: 30px;
+    }
+
+    .w-30 {
+        width: 150px !important;
+    }
+
+    .Contact,
+    .Talk {
+        font-size: 12px;
+    }
+
+    .Need {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    .footerBtn {
+        width: 100% !important;
+    }
+}

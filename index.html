@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link href="IMAGES/favicon.svg" rel="icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" th:href="@{../plugins/bs-datepicker/datepicker.css}">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+
+
+    <body>
+        <!-- ############################# NAVBAR #################################-->
+        <nav class="navbar navbar-expand-md py-0 bg-primary py-2 px-3">
+            <div class=" container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/mainNav.svg" class="w-100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 ps-3 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="p-0 fs-18 fWeight-500 pb-1 nav-link text-light" href="#Features">Features</a>
+                        </li>
+                        <li class="nav-item me-5 ">
+                            <a class="p-0 fs-18 fWeight-500 pb-1 nav-link text-light" href="#Frequently">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <a href="" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#demo">
+                            <button class="btn fWeight-500 px-4 rounded contact fs-18 bg-light text-primary">Schedule
+                                Demo</button></a>
+
+                        <a href="" class="text-decoration-none">
+                            <button
+                                class="btn fWeight-500 px-4 border border-light rounded contact fs-18 text-light">Contact
+                                Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ########################################## Landing page####################### -->
+        <main id="main">
+            <section id="hero" class="container-fluid">
+                <div class="landingPage">
+                    <div class="row align-items-center pb-0">
+                        <div class="col-md-6 col-12 pt-2 pt-md-5">
+                            <div class="d-flex flex-column pt-md-2 pt-0 px-md-3 px-0">
+                                <div class="pt-md-0 pt-3">
+                                    <p class="grow mb-0 fs-35 fWeight-500 text-middle">India’s</p>
+                                    <p class="mb-0 fs-60 fWeight-600 line-70 text-middle">Trusted <span
+                                            class="text-primary">Tax</span>
+                                        and</p>
+                                    <p class=" fs-60 fWeight-600 line-70 text-middle"><span
+                                            class="text-primary">Compliance</span>
+                                        Platform</p>
+                                    <p class="fWeight-400 pt-3 fs-16 mb-md-5 mb-4 text-grey text-middle">An
+                                        internet-based accounting firm providing comprehensive accounting and tax
+                                        assistance to both organizations and individual entrepreneurs.</p>
+                                </div>
+                                <div class="d-flex flex-md-row flex-column align-items-center gap-3">
+                                    <a href="" class="text-decoration-none" data-bs-toggle="modal"
+                                        data-bs-target="#demo">
+                                        <button
+                                            class="btn fWeight-500 px-4 rounded bg-primary text-light fs-18">Schedule
+                                            Demo</button></a>
+
+                                    <a href="" class="text-decoration-none">
+                                        <button
+                                            class="btn fWeight-500 px-4 border rounded text-primary bg-light fs-18 ">Contact
+                                            Us</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="images/landing.svg" class="w-100 pt-md-0 pt-4 d-md-block d-none">
+                            <img src="images/landingMobile.svg" class="w-100 pt-md-0 pt-4 d-md-none d-block">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bg-primary-light py-5">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 col-12">
+                            <div class="px-3 pb-md-0 pb-3">
+                                <p class="mb-0 fs-30 fWeight-700 text-middle pb-md-0 pb-3 text-dark-lightt">What Sets Us
+                                    Apart?</p>
+                                <p class="mb-0 fs-16 fWeight-400 text-justify text-middle">Our expertise lies in a
+                                    singular application, where we channel our efforts into precise strategies and
+                                    meticulous planning. This approach ensures comprehensive accounting and tax support
+                                    tailored for both organizations and individual entrepreneurs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div
+                                        class="rounded d-flex flex-column justify-content-center align-items-center m-2 px-3 py-4 bg-light">
+                                        <img src="images/cloud.svg" class="pb-3">
+                                        <p class="mb-0 fs-20 fWeight-600">Cloud Based</p>
+                                        <p class="mb-0 fs-16 fWeight-400 text-center text-grey">Users can easily access
+                                            the platform
+                                            with help of a browser</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div
+                                        class="rounded d-flex flex-column justify-content-center align-items-center m-2 px-3 py-4 bg-light">
+                                        <img src="images/userFriendly.svg" class="pb-3">
+                                        <p class="mb-0 fs-20 fWeight-600">User Friendly</p>
+                                        <p class="mb-0 fs-16 fWeight-400 text-center text-grey">The platform's
+                                            accessibility is extremely user-friendly</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div
+                                        class="rounded d-flex flex-column justify-content-center align-items-center m-2 px-3 py-4 bg-light">
+                                        <img src="images/data.svg" class="pb-3">
+                                        <p class="mb-0 fs-20 fWeight-600">Data Security</p>
+                                        <p class="mb-0 fs-16 fWeight-400 text-center text-grey">We employ
+                                            state-of-the-art data encryption to safeguard your sensitive information</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div
+                                        class="rounded d-flex flex-column justify-content-center align-items-center m-2 px-3 py-4 bg-light">
+                                        <img src="images/support.svg" class="pb-3">
+                                        <p class="mb-0 fs-20 fWeight-600">Customer Support</p>
+                                        <p class="mb-0 fs-16 fWeight-400 text-center text-grey">Our dedicated team is
+                                            here 24/7, ready to assist you with any questions or concerns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="container-fluid" id="Features">
+                <div class="d-flex justify-content-center py-3">
+                    <button class="btn bg-light borderBlue text-primary px-3 py-2 rounded-pill">Key Features</button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="mb-0 fs-30 fWeight-700 text-center text-dark-light">All In One Platform
+                        for Business Tax & Compliance </p>
+                </div>
+
+
+                <div class="row align-items-center pt-5 px-3">
+                    <div class="col-md-4 col-12 d-flex flex-column justify-content-center">
+                        <p class=" fs-20 fWeight-600 d-md-none d-block text-middle text-dark-light">Features For <span
+                                class="text-primary">Users</span></p>
+                        <img src="images/tax-1.svg" class="w-100">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <p class=" fs-20 fWeight-600 d-md-block d-none">Features For <span
+                                class="text-primary">Users</span></p>
+                        <p class=" fs-16 fWeight-400 text-content-dark featuresText">
+                            Navigate your financial journey effortlessly with BizBilling's user-oriented interface.
+                            Chartered Accountants, firms, employees, and clients each enjoy tailored experiences. Admins
+                            efficiently manage clients and services, while employees track tasks and interact
+                            seamlessly. Clients access task statuses and completed documents, fostering transparency.
+                            Managers oversee tasks and address client inquiries with ease. BizBilling empowers every
+                            user with a dedicated interface, streamlining tasks and enhancing collaboration. Experience
+                            a new era of financial management where user-centric design drives efficiency and success.
+                        </p>
+                        <div class="d-flex">
+                            <a href="" class="text-decoration-none">
+                                <button
+                                    class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Task
+                                    Status Tracking</button></a>
+
+                            <a href="" class="text-decoration-none">
+                                <button
+                                    class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Due
+                                    Date
+                                    Alert</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex-md-row flex-column-reverse align-items-center pt-5 px-3">
+                    <div class="col-md-8 col-12">
+                        <p class=" fs-20 fWeight-600 d-md-block d-none text-dark-light">Features For <span
+                                class="text-primary">Admin</span></p>
+                        <p class=" fs-16 fWeight-400 text-content-dark featuresText">
+                            Take charge with BizBilling's Admin Control Center. Seamlessly manage client services,
+                            employee assignments, and client interactions from a centralized hub. Efficiently assign
+                            tasks, oversee services, and maintain client records. Stay organized as you navigate a
+                            user-friendly dashboard designed to simplify administrative tasks. Empower your team,
+                            enhance client communication, and optimize workflow—all with just a few clicks. Admin
+                            Interface: where control meets convenience.
+                        </p>
+                        <div class="d-flex flex-md-column flex-row">
+                            <div class="d-flex flex-md-row flex-column">
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Access
+                                        Control</button></a>
+
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Task
+                                        Management</button></a>
+
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Service
+                                        Management</button></a>
+                            </div>
+
+                            <div class=" d-flex  flex-md-row flex-column">
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Invoice
+                                        Management</button></a>
+
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Clients
+                                        Management</button></a>
+
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Employee
+                                        Management</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex flex-column justify-content-center">
+                        <p class=" fs-20 fWeight-600 d-md-none d-block text-middle text-dark-light">Features For <span
+                                class="text-primary">Admin</span></p>
+                        <img src="images/tax-2.svg" class="w-100">
+                    </div>
+                </div>
+
+
+                <div class="row align-items-center pt-5 px-3">
+                    <div class="col-md-4 col-12 d-flex flex-column justify-content-center">
+                        <p class=" fs-20 fWeight-600 d-md-none d-block text-middle text-dark-light">Features For <span
+                                class="text-primary"> Clients</span></p>
+                        <img src="images/tax-3.svg" class="w-100">
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <p class=" fs-20 fWeight-600 d-md-block d-none text-dark-light">Features For <span
+                                class="text-primary">
+                                Clients</span></p>
+                        <p class=" fs-16 fWeight-400 text-content-dark featuresText">
+                            Empower your clients with the BizBilling platform. Our dedicated client interface offers
+                            instant access to task statuses, completed documents, and receipts. Enhance transparency,
+                            streamline communication, and foster trust by providing your clients with a seamless portal
+                            to monitor progress and retrieve essential financial information. With BizBilling, client
+                            satisfaction and efficient collaboration are at the forefront of your financial services.
+                        </p>
+                        <div class="d-flex flex-row flex-md-column">
+                            <div class="d-flex  flex-md-row flex-column">
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Task
+                                        Management</button></a>
+
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Invoice
+                                        Management</button></a>
+                                <a href="" class="text-decoration-none d-md-block d-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Service
+                                        Management</button></a>
+                            </div>
+                            <div class="d-flex  flex-md-row flex-column">
+                                <a href="" class="text-decoration-none">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Enquiry
+                                        Management</button></a>
+                                <a href="" class="text-decoration-none d-md-none d-block">
+                                    <button
+                                        class="btn fWeight-600 px-4 rounded fs-16 bg-primary-light text-primary w-30 m-2 py-2">Service
+                                        Management</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="container py-5" id="Frequently">
+                <p class="text-center fs-30 fWeight-700 text-dark-light">Frequently Asked Questions</p>
+
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mb-3 rounded">
+                        <p class="mb-0 border" id="headingOne">
+                            <button class="accordion-button bg-light fs-20 fWeight-600 text-dark-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What types of industries and businesses
+                                can benefit from
+                                this
+                                software solutions?
+                            </button>
+                        </p>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-0 fs-16 fWeight-400 text-content-dark">BizBiling is all in one software
+                                    that
+                                    uses in</p>
+                                <ul>
+                                    <li class="fWeight-400">Small Businesses and Startups</li>
+                                    <li class="fWeight-400">Retail and E-commerce</li>
+                                    <li class="fWeight-400">Service-Based Businesses</li>
+                                    <li class="fWeight-400">Construction and Contracting</li>
+                                    <li class="fWeight-400">Manufacturing and Distribution</li>
+                                    <li class="fWeight-400">Educational Institutions</li>
+                                    <li class="fWeight-400">Transportation and Logistics</li>
+                                    <li class="fWeight-400">Hospitality and Restaurants</li>
+                                    <li class="fWeight-400">Agriculture and Farming</li>
+                                    <li class="fWeight-400">Legal Firms</li>
+                                    <li class="fWeight-400">Real Estate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3 rounded">
+                        <p class="mb-0 border" id="headingTwo">
+                            <button class="accordion-button bg-light collapsed fs-20 fWeight-600 text-dark-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do I report issues or seek assistance
+                                with this
+                                software?
+                            </button>
+                        </p>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-0 fWeight-400 fs-16 text-content-dark"> Our technical team is constantly
+                                    active
+                                    to make your
+                                    experience error-free. But in
+                                    case you find a problem with the software, you can ask the support team to resolve
+                                    the issue. The support team will put all effort into fixing the situation at the
+                                    earliest. We will keep you posted on our progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3 rounded">
+                        <p class="mb-0 border" id="headingThree">
+                            <button class="accordion-button bg-light collapsed fs-20 fWeight-600 text-dark-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mobile App is available for BizBiling
+                                software?
+                            </button>
+                        </p>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-0 fWeight-400 fs-16 text-content-dark">NO,Currently not available our team
+                                    is
+                                    planing to build
+                                    mobile app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3 rounded">
+                        <p class="mb-0 border " id="headingFour">
+                            <button class="accordion-button bg-light collapsed fs-20 fWeight-600 text-dark-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                s BizBiling is cloud-based software?
+                            </button>
+                        </p>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-0 fWeight-400 fs-16 text-content-dark">Yes,BizBiling is a cloud-based
+                                    software.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3 rounded">
+                        <p class="mb-0 border" id="headingFive">
+                            <button class="accordion-button bg-light collapsed fs-20 fWeight-600 text-dark-light" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What is the security of our data?
+                            </button>
+                        </p>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="fs-16 fWeight-400 text-content-dark">Every customer is important to us.
+                                        As a
+                                        policy, we never
+                                        share customers or information with other members. We promise that your data
+                                        will
+                                        NEVER be shared/sold to anyone (except when required for regulatory purposes).
+                                    </li>
+                                    <li class="fs-16 fWeight-400 text-content-dark">We have defined information security
+                                        policy and data
+                                        confidentiality as critical aspects.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="tab-content">
+                    <div class=" py-2 px-md-5 px-2  my-3">
+                        <div class=" d-flex justify-content-between align-items-center pb-3" data-bs-toggle="collapse"
+                            href="#answer-1" role="button" aria-expanded="false" aria-controls="answer-1"
+                            onclick="upsideDown('first')">
+                            <p></p>
+                            <img src="images/downmark.svg" id="first">
+                        </div>
+
+                        <div class="pt-3 collapse multi-collapse" id="answer-1">
+
+                        </div>
+                    </div>
+                    <div class="border py-2 px-md-5 px-2 my-3">
+                        <div class="d-flex justify-content-between align-items-center rounded "
+                            data-bs-toggle="collapse" href="#answer-2" role="button" aria-expanded="false"
+                            aria-controls="answer-2" onclick="upsideDown('second')">
+                            <p class="mb-0 fs-20 fWeight-600 text-dark-light">
+                            </p>
+                            <img src="images/downmark.svg" id="second">
+                        </div>
+                        <div class="pt-3 collapse multi-collapse" id="answer-2">
+                            <p class="></p>
+                        </div>
+                    </div>
+                    <div class=" border py-2 px-md-5 px-2 my-3">
+                            <div class="d-flex justify-content-between align-items-center rounded"
+                                data-bs-toggle="collapse" href="#answer-3" role="button" aria-expanded="false"
+                                aria-controls="answer-3" onclick="upsideDown('third')">
+                                <p class="mb-0 fs-20 fWeight-600 text-dark-light"></p>
+                                <img src="images/downmark.svg" id="third">
+                            </div>
+                            <div class="pt-3 collapse multi-collapse" id="answer-3">
+
+                            </div>
+                        </div>
+                        <div class="border py-2 px-md-5 px-2 my-3">
+                            <div class="d-flex justify-content-between align-items-center rounded"
+                                data-bs-toggle="collapse" href="#answer-4" role="button" aria-expanded="false"
+                                aria-controls="answer-4" onclick="upsideDown('fourht')">
+                                <p class="mb-0 fs-20 fWeight-600 text-dark-light">I
+                                </p>
+                                <img src="images/downmark.svg" id="fourht">
+                            </div>
+                            <div class="pt-3 collapse multi-collapse" id="answer-4">
+                                <p class="mb-0 fWeight-400 fs-16 text-content-dark">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border py-2 px-md-5 px-2 my-3">
+                            <div class="d-flex justify-content-between align-items-center rounded "
+                                data-bs-toggle="collapse" href="#answer-5" role="button" aria-expanded="false"
+                                aria-controls="answer-5" onclick="upsideDown('fifth')">
+                                <p class="mb-0 fs-20 fWeight-600 text-dark-light"></p>
+                                <img src="images/downmark.svg" id="fifth">
+                            </div>
+                            <div class="pt-3 collapse multi-collapse" id="answer-5">
+
+                            </div>
+                        </div>
+                    </div> -->
+
+            </section>
+
+            <div class="container py-md-5 py-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="fs-30 fWeight-600 text-center text-dark-light">Ask Your Question</p>
+                <input type="text" class="px-4 py-3 rounded w-100 border-0 my-2 bg-grey greyInput" placeholder="Name">
+                <input type="text" class="px-4 py-3 rounded w-100 border-0 my-2 bg-grey greyInput" placeholder="Email Id">
+                <textarea type="text" class="px-4 py-3 rounded w-100 border-0 my-2 bg-grey greyInput" placeholder="Your question"
+                    cols="15" rows="6"></textarea>
+                <div class="">
+                    <button class="btn bg-primary text-light px-5 py-2">Submit</button>
+
+                </div>
+            </div>
+
+            <section class="container-fluid">
+                <div class="px-md-3 px-0 bgImg">
+                    <div class="d-flex flex-column justify-content-center align-items-center py-5 rounded">
+                        <p class="fs-30 text-light fWeight-500 Talk">Talk with our expert today</p>
+                        <p class="mb-0 fs-50 text-light fWeight-700 Need">Need help for your accounting firm?</p>
+                        <p class="fs-25 text-light fWeight-600 Contact">Contact us today our support team is always
+                            available.
+                        </p>
+                        <div class="">
+                            <button class="btn bg-primary text-light px-3 py-2">Make an Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- !-- ############################# footer ##############################  -->
+            <section class="mt-5">
+                <div class="bg-primary pt-5 pb-3">
+                    <div class="d-flex flex-column align-items-center container border-bottom mb-3">
+                        <img src="IMAGES/mainNav.svg">
+                        <p class="py-3 m-0 text-light text-center fs-18 fWeight-400 w-860 Talk">BizBiling serves as an
+                            online Chartered Accounting firm, offering valuable accounting and tax assistance to both
+                            organizations and individual entrepreneurs.
+                        </p>
+                        <p class="fs-25 fWeight-500 text-light">Subscribe for Newsletter</p>
+                        <div class="d-flex footerBtn justify-content-between mb-5 p-2 rounded w-50">
+                            <input type="text" placeholder="Enter Your Email id" id="footerInput"
+                                class="border-none fWeight-400 text-light form-control fs-20 px-3">
+                            <button class="btn fWeight-400 fs-20 btn-light submit text-primary py-2"
+                                type="button">Subscribe</button>
+
+                        </div>
+                    </div>
+                    <p class="fs-18 fWeight-500 text-light text-center copyright">Copyright @ BizzBiling</p>
+                </div>
+            </section>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="demo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><img
+                                    src="images/close.svg"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-8 d-md-block d-none">
+                                    <img src="images/demo-1.svg" class="w-100">
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <p class="mb-0 fs-30 fWeight-600">Schedule a Demo</p>
+                                    <p class="mb-0 fs-18 fWeight-400">Fill the details and select the date and time
+                                        which you prefer</p>
+
+                                    <div class="d-flex flex-column align-items-center w-100">
+                                        <input type="text" class="px-3 w-100 rounded bg-grey border-0 py-2 my-2"
+                                            placeholder="Name">
+                                        <input type="text" class="px-3 w-100 rounded bg-grey border-0 py-2 my-2"
+                                            placeholder="Email Id">
+                                        <input type="text" class="px-3 w-100 rounded bg-grey border-0 py-2 my-2"
+                                            placeholder="Account Firm Name">
+                                        <div class="d-flex bg-grey w-100 p-2 justify-content-between rounded">
+                                            <img src="images/dateCalender.svg">
+                                            <input class="form-date form-control bg-grey border-0 w-100 mx-2"
+                                                type="text" id="datepicker">
+                                            <img src="images/inputDrop.svg">
+                                        </div>
+                                        <div class="d-flex bg-grey w-100 p-2 justify-content-between rounded">
+                                            <img src="images/clock.svg">
+                                            <input class="form-date form-control bg-grey border-0 w-100 mx-2"
+                                                type="text" id="datepicker">
+                                            <img src="images/inputDrop.svg">
+                                        </div>
+                                        <p class=" pb-3 fs-16 fWeight-400">Our Technical Team will send you a Demo
+                                            Meeting Link</p>
+                                        <button class="btn w-100 fWeight-500 px-4 rounded bg-primary text-light fs-18"
+                                            data-bs-toggle="modal" data-bs-target="#demo">Schedule
+                                            Demo</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        function upsideDown(inputClass) {
+            document.getElementById(inputClass).style.transform = "rotate(180deg)";
+        }
+    </script>
+
+</html>
